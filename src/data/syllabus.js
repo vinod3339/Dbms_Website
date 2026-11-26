@@ -1,3 +1,5 @@
+import { publicUrl } from "../utils/publicUrl";
+
 export const units = [
   {
     id: 1,
@@ -7,7 +9,7 @@ export const units = [
     sessions: [1, 12],
     official: true,
     outcomes: ["CO1"],
-    note: "/materials/unit-1/unit-1-notes.md",
+    note: publicUrl("/materials/unit-1/unit-1-notes.md"),
     topics: [
       "DBMS versus file system",
       "Instance and schema",
@@ -29,7 +31,7 @@ export const units = [
     sessions: [13, 24],
     official: true,
     outcomes: ["CO2", "CO3"],
-    note: "/materials/unit-2/unit-2-notes.md",
+    note: publicUrl("/materials/unit-2/unit-2-notes.md"),
     topics: [
       "Relational algebra: selection, projection, rename, set operators, joins, and division",
       "Tuple relational calculus",
@@ -49,7 +51,7 @@ export const units = [
     sessions: [25, 36],
     official: true,
     outcomes: ["CO4", "CO5"],
-    note: "/materials/unit-3/unit-3-notes.md",
+    note: publicUrl("/materials/unit-3/unit-3-notes.md"),
     topics: [
       "Schema refinement and problems caused by redundancy",
       "Decomposition and problems related to decomposition",
@@ -71,7 +73,7 @@ export const units = [
     sessions: [37, 47],
     official: true,
     outcomes: ["CO5", "CO6"],
-    note: "/materials/unit-4/unit-4-notes.md",
+    note: publicUrl("/materials/unit-4/unit-4-notes.md"),
     topics: [
       "Lock management and lock-based concurrency control",
       "Two-phase locking and strict two-phase locking",
@@ -92,7 +94,7 @@ export const units = [
     sessions: null,
     official: false,
     outcomes: ["CO1", "CO2", "CO4"],
-    note: "/materials/unit-5/supplementary-notes.md",
+    note: publicUrl("/materials/unit-5/supplementary-notes.md"),
     topics: [
       "Domain relational calculus",
       "Query optimization at the level of algebraic rewrites",

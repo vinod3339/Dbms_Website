@@ -1,3 +1,5 @@
+import { publicUrl } from "../utils/publicUrl";
+
 export const course = {
   institution: "GMRIT Deemed to be University",
   school: "School of Engineering",
@@ -108,11 +110,11 @@ export const course = {
   documents: [
     {
       label: "Course handout (Word)",
-      href: "/materials/official/DBMS-Course-Handout-2026-27.docx",
+      href: publicUrl("/materials/official/DBMS-Course-Handout-2026-27.docx"),
     },
     {
       label: "Syllabus PDF",
-      href: "/materials/official/DBMS-Syllabus.pdf",
+      href: publicUrl("/materials/official/DBMS-Syllabus.pdf"),
     },
   ],
   assessment: [

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import PageIntro from "../components/PageIntro";
 import { course } from "../data/course";
 import { labs } from "../data/labs";
+import { publicUrl } from "../utils/publicUrl";
 
 export default function Laboratory() {
   return (
@@ -14,7 +15,7 @@ export default function Laboratory() {
       <p>
         Use PostgreSQL ({course.web[0].label}) or MySQL ({course.web[1].label}). Each script can be
         run on its own. The original starter table is in{" "}
-        <a href="/materials/laboratory/student.sql" download>
+        <a href={publicUrl("/materials/laboratory/student.sql")} download>
           student.sql
         </a>
         .

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import MarkdownFile from "../components/MarkdownFile";
 import { usePageTitle } from "../hooks/usePageTitle";
+import { publicUrl } from "../utils/publicUrl";
 
 export default function Projects() {
   usePageTitle("Design project");
@@ -11,11 +12,11 @@ export default function Projects() {
         <Link to="/">Overview</Link> · Practice · CO1–CO4
       </p>
       <p>
-        <a className="btn secondary" href="/materials/projects/seminar-series.md" download>
+        <a className="btn secondary" href={publicUrl("/materials/projects/seminar-series.md")} download>
           Download brief
         </a>
       </p>
-      <MarkdownFile src="/materials/projects/seminar-series.md" />
+      <MarkdownFile src={publicUrl("/materials/projects/seminar-series.md")} />
     </div>
   );
 }
